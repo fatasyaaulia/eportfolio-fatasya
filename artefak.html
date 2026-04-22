@@ -19,6 +19,10 @@
                         highlight: '#F59E0B',  
                         lightbg: '#F8FAFC',    
                     },
+                    // INI YANG SEBELUMNYA HILANG:
+                    fontFamily: {
+                        sans: ['Inter', 'Segoe UI', 'sans-serif'],
+                    },
                     animation: {
                         'spin-slow': 'spin 20s linear infinite',
                         'float': 'float 6s ease-in-out infinite',
@@ -280,7 +284,6 @@
     </div>
 
     <script>
-        // Modal Script
         function openModal(url, title) {
             const modal = document.getElementById('previewModal');
             const content = document.getElementById('modalContent');
@@ -307,7 +310,6 @@
             document.body.classList.remove('modal-active');
         }
 
-        // Hamburger Menu Script
         const btn = document.getElementById('mobile-menu-button');
         const menu = document.getElementById('mobile-menu');
         
