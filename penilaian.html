@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian | Fatasya Aulia Suyono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',    
+                        accent: '#2563EB',     
+                        highlight: '#F59E0B',  
+                        lightbg: '#F8FAFC',    
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Segoe UI', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-lightbg text-primary font-sans antialiased overflow-x-hidden relative">
+
+    <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#94A3B8 1px, transparent 1px); background-size: 30px 30px;"></div>
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-primary">
+                Fatasya<span class="text-accent">.</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-accent transition-colors">Beranda</a>
+                <a href="profil.html" class="hover:text-accent transition-colors">Profil Guru</a>
+                <a href="artefak.html" class="hover:text-accent transition-colors">Analisis & Refleksi</a>
+                <a href="penilaian.html" class="text-accent border-b-2 border-accent pb-1">Penilaian</a>
+                <a href="model.html" class="hover:text-accent transition-colors">Model Guru</a>
+            </div>
+            <a href="https://wa.me/6285732003774" target="_blank" class="hidden md:inline-block bg-accent text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition-all z-50 shadow-lg shadow-blue-500/20">Hubungi Saya</a>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-12 px-6 relative z-10 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="px-4 py-1.5 bg-blue-50 text-accent rounded-full text-xs font-bold uppercase tracking-widest border border-blue-100 italic">Dokumentasi Evaluasi PPL 1</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-4 text-primary">Hasil Penilaian & Evaluasi</h1>
+            <p class="text-gray-500 text-lg mx-auto">Instrumen Penilaian Guru Pamong (GP) & Dosen Pembimbing Lapangan (DPL)</p>
+            <div class="w-24 h-1 bg-highlight mx-auto mt-6 rounded-full"></div>
+        </div>
+    </header>
+
+    <main class="pb-24 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="flex items-center gap-6">
+                    <div class="w-16 h-16 bg-blue-50 text-accent rounded-2xl flex items-center justify-center text-3xl shadow-inner shrink-0">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-primary">Status Validasi Dokumen</h2>
+                        <p class="text-gray-500 text-sm">Rekapitulasi penilaian untuk 3 siklus pembelajaran.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full lg:w-auto">
+                    <div class="px-5 py-3 bg-slate-50 rounded-2xl border border-gray-200">
+                        <p class="text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 1</p>
+                        <div class="space-y-1">
+                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
+                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 bg-slate-50 rounded-2xl border border-gray-200">
+                        <p class="text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 2</p>
+                        <div class="space-y-1">
+                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
+                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 bg-slate-50 rounded-2xl border border-gray-200">
+                        <p class="text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 3</p>
+                        <div class="space-y-1">
+                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
+                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-24">
+
+                <div class="space-y-8">
+                    <div class="flex items-center gap-4 border-b border-gray-200 pb-4">
+                        <span class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg">01</span>
+                        <h2 class="text-2xl font-bold text-primary">Penilaian Siklus 1</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="space-y-4">
+                            <div class="flex flex-col gap-1">
+                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
+                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
+                            </div>
+                            
+                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                                <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_7_SIKLUS_1/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                                <a href="LINK_DOWNLOAD_7_S1" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex flex-col gap-1">
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
+                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
+                            </div>
+                            
+                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                                <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_8_SIKLUS_1/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                                <a href="LINK_DOWNLOAD_8_S1" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex items-center gap-4 border-b border-gray-200 pb-4">
+                        <span class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg">02</span>
+                        <h2 class="text-2xl font-bold text-primary">Penilaian Siklus 2</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="space-y-4">
+                            <div class="flex flex-col gap-1">
+                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
+                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
+                            </div>
+                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                                <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_7_SIKLUS_2/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                                <a href="LINK_DOWNLOAD_7_S2" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex flex-col gap-1">
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
+                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
+                            </div>
+                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                                <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_8_SIKLUS_2/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                                <a href="LINK_DOWNLOAD_8_S2" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex items-center gap-4 border-b border-gray-200 pb-4">
+                        <span class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg">03</span>
+                        <h2 class="text-2xl font-bold text-primary">Penilaian Siklus 3</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="space-y-4">
+                            <div class="flex flex-col gap-1">
+                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
+                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
+                            </div>
+                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                                <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_7_SIKLUS_3/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                                <a href="LINK_DOWNLOAD_7_S3" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex flex-col gap-1">
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
+                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
+                            </div>
+                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                                <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_8_SIKLUS_3/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                                <a href="LINK_DOWNLOAD_8_S3" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-gray-200 text-center relative z-10 bg-white">
+        <p class="text-gray-400 text-sm">© 2026 Fatasya Aulia Suyono. E-Portfolio.</p>
+    </footer>
+
+</body>
+</html>
