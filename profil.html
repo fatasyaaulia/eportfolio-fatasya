@@ -43,13 +43,14 @@
 
     <div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(#94A3B8 1px, transparent 1px); background-size: 30px 30px;"></div>
     <div class="absolute top-40 left-0 w-1/3 h-[1px] bg-gradient-to-r from-transparent via-accent/40 to-transparent z-0 transform -rotate-45"></div>
-    <div class="absolute -top-10 -left-10 w-64 h-64 border-[2px] border-accent/10 rounded-full z-0 animate-spin-slow border-dashed"></div>
+    <div class="hidden md:block absolute -top-10 -left-10 w-64 h-64 border-[2px] border-accent/10 rounded-full z-0 animate-spin-slow border-dashed"></div>
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300 shadow-sm">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-primary">
+            <div class="text-2xl font-bold tracking-tighter text-primary z-50">
                 Fatasya<span class="text-accent">.</span>
             </div>
+            
             <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
                 <a href="index.html" class="hover:text-accent transition-colors">Beranda</a>
                 <a href="profil.html" class="text-accent border-b-2 border-accent pb-1">Profil Guru</a>
@@ -58,18 +59,35 @@
                 <a href="model.html" class="hover:text-accent transition-colors">Model Guru</a>
             </div>
             <a href="https://wa.me/6285732003774" target="_blank" class="hidden md:inline-block bg-accent text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition-all z-50 shadow-lg shadow-blue-500/20">Hubungi Saya</a>
+
+            <button id="mobile-menu-button" class="md:hidden text-primary text-2xl focus:outline-none z-50">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-[72px] left-0 w-full bg-white border-b border-gray-200 shadow-xl flex flex-col px-6 py-6 space-y-4 font-medium text-gray-600 z-40">
+            <a href="index.html" class="block w-full hover:text-accent transition-colors">Beranda</a>
+            <a href="profil.html" class="block w-full text-accent font-bold">Profil Guru</a>
+            <a href="artefak.html" class="block w-full hover:text-accent transition-colors">Analisis & Refleksi</a>
+            <a href="penilaian.html" class="block w-full hover:text-accent transition-colors">Penilaian</a>
+            <a href="model.html" class="block w-full hover:text-accent transition-colors">Model Guru</a>
+            <hr class="border-gray-100 my-2">
+            <a href="https://wa.me/6285732003774" target="_blank" class="inline-block bg-accent text-white px-5 py-3 rounded-xl font-bold text-center w-full shadow-lg shadow-blue-500/20">
+                <i class="fab fa-whatsapp mr-2"></i> Hubungi Saya
+            </a>
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-12 px-6 z-10 overflow-visible">
+    <section class="relative pt-28 pb-10 md:pt-32 md:pb-12 px-6 z-10 overflow-visible">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 lg:gap-16">
-            <div class="relative group flex-shrink-0 animate-fade-in-up">
+            
+            <div class="relative group flex-shrink-0 animate-fade-in-up mt-8 md:mt-0">
                 <div class="absolute -inset-4 bg-gradient-to-tr from-accent/20 to-highlight/20 rounded-[3rem] blur-2xl opacity-50 group-hover:opacity-80 transition-opacity"></div>
-                <div class="relative w-56 h-56 md:w-72 md:h-72 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                <div class="relative w-48 h-48 md:w-72 md:h-72 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden border-4 md:border-8 border-white shadow-2xl rotate-3 group-hover:rotate-0 transition-transform duration-500">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=800" alt="Fatasya Aulia Suyono" class="w-full h-full object-cover">
                 </div>
-                <div class="absolute -bottom-4 -right-4 bg-white p-2 rounded-2xl shadow-xl border-4 border-white animate-float">
-                    <img src="https://drive.google.com/thumbnail?id=1o9zpwIS1q4_iwXh-_4TBHrYPptNG-hNH&sz=w500" alt="Logo UNESA" class="w-12 h-12 object-contain">
+                <div class="absolute -bottom-4 -right-4 bg-white p-2 rounded-xl md:rounded-2xl shadow-xl border-2 md:border-4 border-white animate-float">
+                    <img src="https://drive.google.com/thumbnail?id=1o9zpwIS1q4_iwXh-_4TBHrYPptNG-hNH&sz=w500" alt="Logo UNESA" class="w-10 h-10 md:w-12 md:h-12 object-contain">
                 </div>
             </div>
 
@@ -78,14 +96,14 @@
                     Calon Pendidik <br/>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400 italic">Profesional</span>
                 </h1>
-                <p class="text-lg text-slate-500 max-w-2xl leading-relaxed">
+                <p class="text-base md:text-lg text-slate-500 max-w-2xl leading-relaxed mx-auto md:mx-0">
                     Mengenal lebih dekat perjalanan akademik dan visi profesional Fatasya Aulia Suyono dalam mentransformasi pendidikan melalui teknologi informasi di Universitas Negeri Surabaya.
                 </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
-                    <span class="px-4 py-2 bg-white border border-gray-100 rounded-xl text-sm font-semibold shadow-sm flex items-center gap-2">
-                        <i class="fas fa-id-card text-accent"></i> PPG Prajabatan 2026
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
+                    <span class="px-4 py-2 bg-white border border-gray-100 rounded-lg md:rounded-xl text-xs md:text-sm font-semibold shadow-sm flex items-center gap-2">
+                        <i class="fas fa-id-card text-accent"></i> PPG Prajabatan 2024
                     </span>
-                    <span class="px-4 py-2 bg-white border border-gray-100 rounded-xl text-sm font-semibold shadow-sm flex items-center gap-2">
+                    <span class="px-4 py-2 bg-white border border-gray-100 rounded-lg md:rounded-xl text-xs md:text-sm font-semibold shadow-sm flex items-center gap-2">
                         <i class="fas fa-code text-highlight"></i> Teknik Informatika
                     </span>
                 </div>
@@ -93,58 +111,56 @@
         </div>
     </section>
 
-    <main class="pb-24 px-6 relative z-10">
+    <main class="pb-16 md:pb-24 px-6 relative z-10">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div class="md:col-span-1 space-y-6">
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+                <div class="bg-white p-6 md:p-8 rounded-3xl md:rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform"></div>
-                    
                     <h3 class="text-lg font-bold mb-6 flex items-center gap-2 text-primary">
                         <i class="fas fa-user-circle text-accent text-xl"></i> Identitas Diri
                     </h3>
-                    
-                    <div class="space-y-4">
-                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <div class="space-y-3 md:space-y-4">
+                        <div class="p-3 md:p-4 bg-slate-50 rounded-xl md:rounded-2xl border border-slate-100">
                             <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Nama Lengkap</p>
-                            <p class="font-bold text-primary">Fatasya Aulia Suyono</p>
+                            <p class="font-bold text-primary text-sm md:text-base">Fatasya Aulia Suyono</p>
                         </div>
-                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                        <div class="p-3 md:p-4 bg-slate-50 rounded-xl md:rounded-2xl border border-slate-100">
                             <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Bidang Keahlian</p>
-                            <p class="font-bold text-primary">Teknik Informatika</p>
+                            <p class="font-bold text-primary text-sm md:text-base">Teknik Informatika</p>
                         </div>
-                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                        <div class="p-3 md:p-4 bg-slate-50 rounded-xl md:rounded-2xl border border-slate-100">
                             <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Sekolah Mitra (PPL)</p>
-                            <p class="font-bold text-primary">[Nama Sekolah Mitra]</p>
+                            <p class="font-bold text-primary text-sm md:text-base">[Nama Sekolah Mitra]</p>
                         </div>
-                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                        <div class="p-3 md:p-4 bg-slate-50 rounded-xl md:rounded-2xl border border-slate-100">
                             <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Daerah Asal</p>
-                            <p class="font-bold text-primary">Lamongan, Jawa Timur</p>
+                            <p class="font-bold text-primary text-sm md:text-base">Lamongan, Jawa Timur</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-primary text-white p-8 rounded-[2.5rem] shadow-xl relative overflow-hidden">
+                <div class="bg-primary text-white p-6 md:p-8 rounded-3xl md:rounded-[2.5rem] shadow-xl relative overflow-hidden">
                     <div class="absolute bottom-0 right-0 opacity-10">
-                        <i class="fas fa-laptop-code text-9xl -mb-8 -mr-8"></i>
+                        <i class="fas fa-laptop-code text-7xl md:text-9xl -mb-4 -mr-4 md:-mb-8 md:-mr-8"></i>
                     </div>
-                    <h3 class="text-lg font-bold mb-6">Expertise</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs border border-white/10 italic">IT Literacy</span>
-                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs border border-white/10 italic">Web Design</span>
-                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs border border-white/10 italic">Problem Solving</span>
-                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs border border-white/10 italic">Pedagogi Digital</span>
+                    <h3 class="text-lg font-bold mb-4 md:mb-6 relative z-10">Expertise</h3>
+                    <div class="flex flex-wrap gap-2 relative z-10">
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-xs border border-white/10 italic">IT Literacy</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-xs border border-white/10 italic">Web Design</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-xs border border-white/10 italic">Problem Solving</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-xs border border-white/10 italic">Pedagogi Digital</span>
                     </div>
                 </div>
             </div>
 
-            <div class="md:col-span-2 space-y-8">
-                <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-gray-100 relative overflow-hidden">
-                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                        <span class="w-2 h-8 bg-highlight rounded-full"></span>
+            <div class="md:col-span-2 space-y-6 md:space-y-8">
+                <div class="bg-white p-6 md:p-10 rounded-3xl md:rounded-[3rem] shadow-sm border border-gray-100 relative overflow-hidden">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 flex items-center gap-3">
+                        <span class="w-2 h-6 md:h-8 bg-highlight rounded-full"></span>
                         Asal Daerah & Filosofi
                     </h3>
-                    <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                    <div class="space-y-4 md:space-y-6 text-slate-600 leading-relaxed text-base md:text-lg">
                         <p>
                             Lahir dan dibesarkan di tengah hangatnya atmosfer <strong class="text-primary underline decoration-highlight decoration-4 underline-offset-4">Kabupaten Lamongan</strong>, saya mewarisi semangat juang dan etos kerja yang tinggi. Keunikan Lamongan yang menyeimbangkan tradisi dengan keterbukaan terhadap kemajuan menjadi fondasi karakter saya sebagai pendidik.
                         </p>
@@ -157,61 +173,84 @@
                     </div>
                 </div>
 
-                <div class="bg-gradient-to-r from-accent to-blue-700 p-10 rounded-[3rem] text-white shadow-xl shadow-blue-200 relative overflow-hidden group">
-                    <div class="absolute -right-10 -bottom-10 opacity-20 transform group-hover:scale-110 transition-transform">
-                        <i class="fas fa-quote-right text-[12rem]"></i>
+                <div class="bg-gradient-to-r from-accent to-blue-700 p-6 md:p-10 rounded-3xl md:rounded-[3rem] text-white shadow-xl shadow-blue-200 relative overflow-hidden group">
+                    <div class="absolute -right-5 -bottom-5 md:-right-10 md:-bottom-10 opacity-20 transform group-hover:scale-110 transition-transform">
+                        <i class="fas fa-quote-right text-[8rem] md:text-[12rem]"></i>
                     </div>
-                    <p class="text-2xl font-medium leading-relaxed relative z-10 italic">
+                    <p class="text-lg md:text-2xl font-medium leading-relaxed relative z-10 italic">
                         "Teknologi di ruang kelas bukanlah pengganti guru, melainkan kanvas tanpa batas bagi pendidik untuk melukis masa depan."
                     </p>
-                    <div class="mt-6 flex items-center gap-4 relative z-10">
-                        <div class="w-12 h-1 bg-highlight rounded-full"></div>
-                        <span class="font-bold tracking-widest text-sm uppercase">Visi Profesional</span>
+                    <div class="mt-4 md:mt-6 flex items-center gap-3 md:gap-4 relative z-10">
+                        <div class="w-8 md:w-12 h-1 bg-highlight rounded-full"></div>
+                        <span class="font-bold tracking-widest text-[10px] md:text-sm uppercase">Visi Profesional</span>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="py-20 relative z-10 bg-white border-t border-gray-100">
+    <section class="py-16 md:py-20 relative z-10 bg-white border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h3 class="text-accent uppercase tracking-widest text-sm font-bold mb-2">Terhubung Bersama Saya</h3>
-                <h2 class="text-3xl lg:text-4xl font-bold text-primary">Informasi Kontak</h2>
-                <div class="w-16 h-1 bg-highlight mx-auto mt-4 rounded-full"></div>
+            <div class="text-center mb-10 md:mb-12">
+                <h3 class="text-accent uppercase tracking-widest text-xs md:text-sm font-bold mb-2">Terhubung Bersama Saya</h3>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">Informasi Kontak</h2>
+                <div class="w-12 md:w-16 h-1 bg-highlight mx-auto mt-4 rounded-full"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <a href="https://wa.me/6285732003774" target="_blank" class="flex flex-col items-center p-8 bg-lightbg rounded-3xl border border-gray-100 hover:shadow-lg hover:-translate-y-2 transition-all group">
-                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+                <a href="https://wa.me/6285732003774" target="_blank" class="flex md:flex-col items-center p-4 md:p-8 bg-lightbg rounded-2xl md:rounded-3xl border border-gray-100 hover:shadow-lg md:hover:-translate-y-2 transition-all group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl md:text-2xl md:mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors mr-4 md:mr-0">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <h4 class="font-bold text-primary mb-1">WhatsApp</h4>
-                    <p class="text-sm text-gray-500">0857-3200-3774</p>
+                    <div class="md:text-center flex-grow">
+                        <h4 class="font-bold text-primary text-sm md:text-base mb-1">WhatsApp</h4>
+                        <p class="text-xs md:text-sm text-gray-500">0857-3200-3774</p>
+                    </div>
                 </a>
                 
-                <a href="mailto:emailfatasya@gmail.com" class="flex flex-col items-center p-8 bg-lightbg rounded-3xl border border-gray-100 hover:shadow-lg hover:-translate-y-2 transition-all group">
-                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <a href="mailto:emailfatasya@gmail.com" class="flex md:flex-col items-center p-4 md:p-8 bg-lightbg rounded-2xl md:rounded-3xl border border-gray-100 hover:shadow-lg md:hover:-translate-y-2 transition-all group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl md:text-2xl md:mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors mr-4 md:mr-0">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h4 class="font-bold text-primary mb-1">Email Akademik</h4>
-                    <p class="text-sm text-gray-500">Klik untuk mengirim pesan</p>
+                    <div class="md:text-center flex-grow">
+                        <h4 class="font-bold text-primary text-sm md:text-base mb-1">Email Akademik</h4>
+                        <p class="text-xs md:text-sm text-gray-500">Klik untuk mengirim pesan</p>
+                    </div>
                 </a>
 
-                <a href="#" target="_blank" class="flex flex-col items-center p-8 bg-lightbg rounded-3xl border border-gray-100 hover:shadow-lg hover:-translate-y-2 transition-all group">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center text-2xl mb-4 group-hover:bg-blue-700 group-hover:text-white transition-colors">
+                <a href="#" target="_blank" class="flex md:flex-col items-center p-4 md:p-8 bg-lightbg rounded-2xl md:rounded-3xl border border-gray-100 hover:shadow-lg md:hover:-translate-y-2 transition-all group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-50 text-blue-700 rounded-full flex items-center justify-center text-xl md:text-2xl md:mb-4 group-hover:bg-blue-700 group-hover:text-white transition-colors mr-4 md:mr-0">
                         <i class="fab fa-linkedin-in"></i>
                     </div>
-                    <h4 class="font-bold text-primary mb-1">LinkedIn</h4>
-                    <p class="text-sm text-gray-500">Fatasya Aulia Suyono</p>
+                    <div class="md:text-center flex-grow">
+                        <h4 class="font-bold text-primary text-sm md:text-base mb-1">LinkedIn</h4>
+                        <p class="text-xs md:text-sm text-gray-500">Fatasya Aulia Suyono</p>
+                    </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-gray-200 text-center relative z-10 bg-white">
-        <p class="text-gray-400 text-sm">© 2026 Fatasya Aulia Suyono. E-Portfolio.</p>
+    <footer class="py-8 md:py-12 border-t border-gray-200 text-center relative z-10 bg-white">
+        <p class="text-gray-400 text-xs md:text-sm">© 2026 Fatasya Aulia Suyono. E-Portfolio.</p>
     </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            const icon = btn.querySelector('i');
+            if(menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+    </script>
 
 </body>
 </html>
