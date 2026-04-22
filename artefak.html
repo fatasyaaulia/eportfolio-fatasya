@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Analisis Artefak | Fatasya Aulia Suyono</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,16 +39,16 @@
         details summary::-webkit-details-marker { display:none; }
     </style>
 </head>
-<body class="bg-lightbg text-primary font-sans antialiased overflow-x-hidden relative">
+<body class="bg-lightbg text-primary font-sans antialiased overflow-x-hidden w-full relative">
 
     <div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(#94A3B8 1px, transparent 1px); background-size: 30px 30px;"></div>
     <div class="absolute top-40 left-0 w-1/3 h-[1px] bg-gradient-to-r from-transparent via-accent/20 to-transparent z-0 transform -rotate-45"></div>
     <div class="absolute bottom-40 right-0 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-highlight/20 to-transparent z-0 transform rotate-12"></div>
-    <div class="absolute top-20 -left-10 w-64 h-64 border-[2px] border-accent/5 rounded-full z-0 animate-spin-slow border-dashed"></div>
+    <div class="hidden md:block absolute top-20 -left-10 w-64 h-64 border-[2px] border-accent/5 rounded-full z-0 animate-spin-slow border-dashed"></div>
 
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-primary z-50">Fatasya<span class="text-accent">.</span></div>
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 py-4 flex justify-between items-center">
+            <div class="text-xl sm:text-2xl font-bold tracking-tighter text-primary z-50">Fatasya<span class="text-accent">.</span></div>
             
             <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
                 <a href="index.html" class="hover:text-accent transition-colors">Beranda</a>
@@ -65,7 +65,7 @@
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden absolute top-[72px] left-0 w-full bg-white border-b border-gray-200 shadow-xl flex flex-col px-6 py-6 space-y-4 font-medium text-gray-600 z-40">
+        <div id="mobile-menu" class="hidden md:hidden absolute top-[68px] sm:top-[72px] left-0 w-full bg-white border-b border-gray-200 shadow-xl flex flex-col px-6 py-6 space-y-4 font-medium text-gray-600 z-40">
             <a href="index.html" class="block w-full hover:text-accent transition-colors">Beranda</a>
             <a href="profil.html" class="block w-full hover:text-accent transition-colors">Profil Guru</a>
             <a href="artefak.html" class="block w-full text-accent font-bold">Analisis & Refleksi</a>
@@ -78,202 +78,202 @@
         </div>
     </nav>
 
-    <header class="pt-32 pb-12 px-6 relative z-10 text-center">
+    <header class="pt-28 sm:pt-32 pb-10 sm:pb-12 px-5 sm:px-6 relative z-10 text-center">
         <div class="max-w-4xl mx-auto">
-            <span class="px-4 py-1.5 bg-blue-50 text-accent rounded-full text-xs font-bold uppercase tracking-widest border border-blue-100 italic">Dokumentasi Praktik Terbimbing</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight text-primary">Analisis Artefak <br class="hidden md:block"/> Pembelajaran PPL 1</h1>
-            <p class="text-gray-500 text-lg mx-auto">Evaluasi mendalam atas perangkat pembelajaran dan bukti otentik kegiatan mengajar.</p>
+            <span class="px-3 sm:px-4 py-1.5 bg-blue-50 text-accent rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest border border-blue-100 italic inline-block mb-3">Dokumentasi Praktik Terbimbing</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-2 sm:mt-4 mb-4 sm:mb-6 leading-tight text-primary">Analisis Artefak <br class="hidden md:block"/> Pembelajaran PPL 1</h1>
+            <p class="text-gray-500 text-base sm:text-lg mx-auto px-2">Evaluasi mendalam atas perangkat pembelajaran dan bukti otentik kegiatan mengajar.</p>
         </div>
     </header>
 
-    <main class="pb-24 px-6 relative z-10">
-        <div class="max-w-7xl mx-auto space-y-32">
+    <main class="pb-20 sm:pb-24 px-5 sm:px-6 relative z-10">
+        <div class="max-w-7xl mx-auto space-y-24 sm:space-y-32">
             
-            <section class="space-y-10 border-b border-gray-200 pb-20 relative">
-                <div class="flex items-center gap-4">
-                    <span class="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-xl">01</span>
+            <section class="space-y-8 sm:space-y-10 border-b border-gray-200 pb-16 sm:pb-20 relative">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                    <span class="w-12 h-12 sm:w-14 sm:h-14 bg-primary text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl font-bold shadow-xl shrink-0">01</span>
                     <div>
-                        <h2 class="text-3xl font-bold text-primary">Siklus 1: [Materi Utama]</h2>
-                        <p class="text-accent font-medium text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Praktik di: [Nama Sekolah Mitra]</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-primary">Siklus 1: [Materi Utama]</h2>
+                        <p class="text-accent font-medium text-xs sm:text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Praktik di: [Nama Sekolah Mitra]</p>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">
                     <div class="relative group cursor-pointer" onclick="openModal('https://docs.google.com/document/d/ID_MODUL_1/preview', 'Modul Ajar Siklus 1')">
-                        <div class="relative bg-gray-900 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-video">
+                        <div class="relative bg-gray-900 rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-video md:aspect-[4/3] lg:aspect-video">
                             <iframe src="https://docs.google.com/document/d/ID_MODUL_1/preview" class="w-full h-full opacity-60 pointer-events-none" frameborder="0"></iframe>
                             <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all">
-                                <div class="w-16 h-16 bg-white text-accent rounded-full flex items-center justify-center mb-3 animate-pulse-slow shadow-xl"><i class="fas fa-expand-alt text-2xl"></i></div>
-                                <span class="bg-accent text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide">Pratinjau Modul Ajar</span>
+                                <div class="w-12 h-12 sm:w-16 sm:h-16 bg-white text-accent rounded-full flex items-center justify-center mb-2 sm:mb-3 animate-pulse-slow shadow-xl"><i class="fas fa-expand-alt text-xl sm:text-2xl"></i></div>
+                                <span class="bg-accent text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold tracking-wide">Pratinjau Modul</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="space-y-4">
-                        <details class="group bg-white p-6 rounded-3xl border border-gray-100 shadow-sm transition-all" open>
-                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none">
+                        <details class="group bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm transition-all" open>
+                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none text-sm sm:text-base">
                                 <span class="flex items-center gap-3"><i class="fas fa-info-circle text-accent"></i> 1. Konteks & Tujuan</span>
                                 <i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i>
                             </summary>
-                            <p class="mt-4 text-sm text-gray-600 leading-relaxed">[Tuliskan detail mengenai karakteristik peserta didik dan tujuan pembelajaran utama pada siklus 1.]</p>
+                            <p class="mt-4 text-xs sm:text-sm text-gray-600 leading-relaxed text-left md:text-justify">[Tuliskan detail mengenai karakteristik peserta didik dan tujuan pembelajaran utama pada siklus 1.]</p>
                         </details>
                         
-                        <details class="group bg-white p-6 rounded-3xl border border-gray-100 shadow-sm transition-all">
-                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none">
+                        <details class="group bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm transition-all">
+                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none text-sm sm:text-base">
                                 <span class="flex items-center gap-3"><i class="fas fa-chart-line text-highlight"></i> 2. Kelebihan & Kekurangan</span>
                                 <i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i>
                             </summary>
-                            <div class="mt-4 space-y-4">
+                            <div class="mt-4 space-y-3 sm:space-y-4">
                                 <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded-r-xl">
-                                    <h4 class="text-xs font-bold text-green-700 uppercase">Kelebihan:</h4>
-                                    <p class="text-sm text-gray-600">[Analisis komponen yang sudah efektif di siklus ini.]</p>
+                                    <h4 class="text-[10px] sm:text-xs font-bold text-green-700 uppercase">Kelebihan:</h4>
+                                    <p class="text-xs sm:text-sm text-gray-600 mt-1 text-left md:text-justify">[Analisis komponen yang sudah efektif di siklus ini.]</p>
                                 </div>
                                 <div class="p-3 bg-red-50 border-l-4 border-red-500 rounded-r-xl">
-                                    <h4 class="text-xs font-bold text-red-700 uppercase">Analisis Kekurangan:</h4>
-                                    <p class="text-sm text-gray-600">[Tuliskan kendala/kekurangan yang tidak berjalan sesuai rencana, misal: durasi manajemen waktu atau tingkat pemahaman siswa terhadap media yang digunakan.]</p>
+                                    <h4 class="text-[10px] sm:text-xs font-bold text-red-700 uppercase">Analisis Kekurangan:</h4>
+                                    <p class="text-xs sm:text-sm text-gray-600 mt-1 text-left md:text-justify">[Tuliskan kendala/kekurangan yang tidak berjalan sesuai rencana, misal: durasi manajemen waktu atau tingkat pemahaman siswa terhadap media yang digunakan.]</p>
                                 </div>
                             </div>
                         </details>
                         
-                        <details class="group bg-blue-50 p-6 rounded-3xl border border-blue-100 shadow-sm transition-all">
-                            <summary class="flex justify-between items-center font-bold text-accent cursor-pointer list-none">
+                        <details class="group bg-blue-50 p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-blue-100 shadow-sm transition-all">
+                            <summary class="flex justify-between items-center font-bold text-accent cursor-pointer list-none text-sm sm:text-base">
                                 <span class="flex items-center gap-3"><i class="fas fa-graduation-cap"></i> 3. Kajian Teori Pedagogi</span>
                                 <i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i>
                             </summary>
-                            <p class="mt-4 text-sm text-blue-900 leading-relaxed italic">"Berdasarkan teori [Nama Teori], artefak ini menunjukkan bahwa..."</p>
+                            <p class="mt-4 text-xs sm:text-sm text-blue-900 leading-relaxed italic text-left md:text-justify">"Berdasarkan teori [Nama Teori], artefak ini menunjukkan bahwa..."</p>
                         </details>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    <div onclick="openModal('LINK_MEDIA_1', 'Media Pembelajaran S1')" class="group cursor-pointer relative bg-gradient-to-br from-orange-400 to-highlight p-[2px] rounded-[2rem] shadow-lg hover:shadow-highlight/20 transition-all hover:-translate-y-2">
-                        <div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-orange-600 group-hover:text-white transition-all"><i class="fas fa-desktop"></i></div>
-                                <div><p class="text-[10px] font-black uppercase text-orange-600 tracking-widest">Media</p><p class="font-bold text-primary">Interaktif</p></div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-0">
+                    <div onclick="openModal('LINK_MEDIA_1', 'Media Pembelajaran S1')" class="group cursor-pointer relative bg-gradient-to-br from-orange-400 to-highlight p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-highlight/20 transition-all hover:-translate-y-2">
+                        <div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between">
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 text-orange-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-orange-600 group-hover:text-white transition-all"><i class="fas fa-desktop"></i></div>
+                                <div><p class="text-[8px] sm:text-[10px] font-black uppercase text-orange-600 tracking-widest">Media</p><p class="font-bold text-primary text-sm sm:text-base">Interaktif</p></div>
                             </div>
-                            <i class="fas fa-arrow-right text-orange-400 group-hover:translate-x-2 transition-transform"></i>
+                            <i class="fas fa-arrow-right text-orange-400 text-sm group-hover:translate-x-2 transition-transform"></i>
                         </div>
                     </div>
-                    <div onclick="openModal('https://www.youtube.com/embed/VID_1', 'Video Praktik S1')" class="group cursor-pointer relative bg-gradient-to-br from-red-500 to-red-700 p-[2px] rounded-[2rem] shadow-lg hover:shadow-red-500/20 transition-all hover:-translate-y-2">
-                        <div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-red-600 group-hover:text-white transition-all"><i class="fas fa-play"></i></div>
-                                <div><p class="text-[10px] font-black uppercase text-red-600 tracking-widest">Video</p><p class="font-bold text-primary">Praktik</p></div>
+                    <div onclick="openModal('https://www.youtube.com/embed/VID_1', 'Video Praktik S1')" class="group cursor-pointer relative bg-gradient-to-br from-red-500 to-red-700 p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-red-500/20 transition-all hover:-translate-y-2">
+                        <div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between">
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 text-red-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-red-600 group-hover:text-white transition-all"><i class="fas fa-play"></i></div>
+                                <div><p class="text-[8px] sm:text-[10px] font-black uppercase text-red-600 tracking-widest">Video</p><p class="font-bold text-primary text-sm sm:text-base">Praktik</p></div>
                             </div>
-                            <i class="fas fa-play text-red-400 text-xs group-hover:translate-x-2 transition-transform"></i>
+                            <i class="fas fa-play text-red-400 text-xs sm:text-sm group-hover:translate-x-2 transition-transform"></i>
                         </div>
                     </div>
-                    <div onclick="openModal('LINK_SISWA_1', 'Hasil Belajar S1')" class="group cursor-pointer relative bg-gradient-to-br from-green-500 to-emerald-700 p-[2px] rounded-[2rem] shadow-lg hover:shadow-green-500/20 transition-all hover:-translate-y-2">
-                        <div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-green-600 group-hover:text-white transition-all"><i class="fas fa-tasks"></i></div>
-                                <div><p class="text-[10px] font-black uppercase text-green-600 tracking-widest">Hasil</p><p class="font-bold text-primary">Belajar</p></div>
+                    <div onclick="openModal('LINK_SISWA_1', 'Hasil Belajar S1')" class="group cursor-pointer relative bg-gradient-to-br from-green-500 to-emerald-700 p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-green-500/20 transition-all hover:-translate-y-2">
+                        <div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between">
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 text-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-green-600 group-hover:text-white transition-all"><i class="fas fa-tasks"></i></div>
+                                <div><p class="text-[8px] sm:text-[10px] font-black uppercase text-green-600 tracking-widest">Hasil</p><p class="font-bold text-primary text-sm sm:text-base">Belajar</p></div>
                             </div>
-                            <i class="fas fa-external-link-alt text-green-400 text-xs group-hover:translate-x-2 transition-transform"></i>
+                            <i class="fas fa-external-link-alt text-green-400 text-xs sm:text-sm group-hover:translate-x-2 transition-transform"></i>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="space-y-10 border-b border-gray-200 pb-20 relative">
-                <div class="flex items-center gap-4">
-                    <span class="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-xl">02</span>
+            <section class="space-y-8 sm:space-y-10 border-b border-gray-200 pb-16 sm:pb-20 relative">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                    <span class="w-12 h-12 sm:w-14 sm:h-14 bg-primary text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl font-bold shadow-xl shrink-0">02</span>
                     <div>
-                        <h2 class="text-3xl font-bold text-primary">Siklus 2: [Materi Utama]</h2>
-                        <p class="text-accent font-medium text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Praktik di: [Nama Sekolah Mitra]</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-primary">Siklus 2: [Materi Utama]</h2>
+                        <p class="text-accent font-medium text-xs sm:text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Praktik di: [Nama Sekolah Mitra]</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">
                     <div class="relative group cursor-pointer" onclick="openModal('https://docs.google.com/document/d/ID_MODUL_2/preview', 'Modul Ajar Siklus 2')">
-                        <div class="relative bg-gray-900 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-video">
+                        <div class="relative bg-gray-900 rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-video md:aspect-[4/3] lg:aspect-video">
                             <iframe src="https://docs.google.com/document/d/ID_MODUL_2/preview" class="w-full h-full opacity-60 pointer-events-none" frameborder="0"></iframe>
                             <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all">
-                                <div class="w-16 h-16 bg-white text-accent rounded-full flex items-center justify-center mb-3 animate-pulse-slow shadow-xl"><i class="fas fa-expand-alt text-2xl"></i></div>
-                                <span class="bg-accent text-white px-6 py-2 rounded-full text-sm font-bold">Pratinjau Modul Ajar</span>
+                                <div class="w-12 h-12 sm:w-16 sm:h-16 bg-white text-accent rounded-full flex items-center justify-center mb-2 sm:mb-3 animate-pulse-slow shadow-xl"><i class="fas fa-expand-alt text-xl sm:text-2xl"></i></div>
+                                <span class="bg-accent text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold">Pratinjau Modul</span>
                             </div>
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <details class="group bg-white p-6 rounded-3xl border border-gray-100 shadow-sm transition-all" open><summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none"><span class="flex items-center gap-3"><i class="fas fa-info-circle text-accent"></i> 1. Konteks & Tujuan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-sm text-gray-600">[Isi Analisis Karakteristik Siswa]</p></details>
+                        <details class="group bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm transition-all" open><summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none text-sm sm:text-base"><span class="flex items-center gap-3"><i class="fas fa-info-circle text-accent"></i> 1. Konteks & Tujuan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-xs sm:text-sm text-gray-600 text-left md:text-justify">[Isi Analisis Karakteristik Siswa]</p></details>
                         
-                        <details class="group bg-white p-6 rounded-3xl border border-gray-100 shadow-sm transition-all">
-                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none"><span class="flex items-center gap-3"><i class="fas fa-chart-line text-highlight"></i> 2. Kelebihan & Kekurangan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary>
-                            <div class="mt-4 space-y-4">
+                        <details class="group bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm transition-all">
+                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none text-sm sm:text-base"><span class="flex items-center gap-3"><i class="fas fa-chart-line text-highlight"></i> 2. Kelebihan & Kekurangan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary>
+                            <div class="mt-4 space-y-3 sm:space-y-4">
                                 <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded-r-xl">
-                                    <h4 class="text-xs font-bold text-green-700 uppercase">Kelebihan:</h4>
-                                    <p class="text-sm text-gray-600">[Analisis komponen yang sudah efektif di siklus ini.]</p>
+                                    <h4 class="text-[10px] sm:text-xs font-bold text-green-700 uppercase">Kelebihan:</h4>
+                                    <p class="text-xs sm:text-sm text-gray-600 mt-1 text-left md:text-justify">[Analisis komponen yang sudah efektif di siklus ini.]</p>
                                 </div>
                                 <div class="p-3 bg-red-50 border-l-4 border-red-500 rounded-r-xl">
-                                    <h4 class="text-xs font-bold text-red-700 uppercase">Analisis Kekurangan:</h4>
-                                    <p class="text-sm text-gray-600">[Tuliskan kendala/kekurangan yang tidak berjalan sesuai rencana.]</p>
+                                    <h4 class="text-[10px] sm:text-xs font-bold text-red-700 uppercase">Analisis Kekurangan:</h4>
+                                    <p class="text-xs sm:text-sm text-gray-600 mt-1 text-left md:text-justify">[Tuliskan kendala/kekurangan yang tidak berjalan sesuai rencana.]</p>
                                 </div>
                             </div>
                         </details>
                         
-                        <details class="group bg-blue-50 p-6 rounded-3xl border border-blue-100 shadow-sm transition-all"><summary class="flex justify-between items-center font-bold text-accent cursor-pointer list-none"><span class="flex items-center gap-3"><i class="fas fa-graduation-cap"></i> 3. Kajian Teori Pedagogi</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-sm text-blue-900 leading-relaxed italic">[Isi Teori Pembelajaran]</p></details>
+                        <details class="group bg-blue-50 p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-blue-100 shadow-sm transition-all"><summary class="flex justify-between items-center font-bold text-accent cursor-pointer list-none text-sm sm:text-base"><span class="flex items-center gap-3"><i class="fas fa-graduation-cap"></i> 3. Kajian Teori Pedagogi</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-xs sm:text-sm text-blue-900 leading-relaxed italic text-left md:text-justify">[Isi Teori Pembelajaran]</p></details>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    <div onclick="openModal('LINK_MEDIA_2', 'Media Belajar S2')" class="group cursor-pointer relative bg-gradient-to-br from-orange-400 to-highlight p-[2px] rounded-[2rem] shadow-lg hover:shadow-highlight/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-orange-600 group-hover:text-white transition-all"><i class="fas fa-desktop"></i></div><div><p class="text-[10px] font-black uppercase text-orange-600 tracking-widest">Media</p><p class="font-bold text-primary">Interaktif</p></div></div><i class="fas fa-arrow-right text-orange-400 group-hover:translate-x-2 transition-transform"></i></div></div>
-                    <div onclick="openModal('https://www.youtube.com/embed/VID_2', 'Video Praktik S2')" class="group cursor-pointer relative bg-gradient-to-br from-red-500 to-red-700 p-[2px] rounded-[2rem] shadow-lg hover:shadow-red-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-red-600 group-hover:text-white transition-all"><i class="fas fa-play"></i></div><div><p class="text-[10px] font-black uppercase text-red-600 tracking-widest">Video</p><p class="font-bold text-primary">Praktik</p></div></div><i class="fas fa-play text-red-400 text-xs group-hover:translate-x-2 transition-transform"></i></div></div>
-                    <div onclick="openModal('LINK_SISWA_2', 'Hasil Belajar S2')" class="group cursor-pointer relative bg-gradient-to-br from-green-500 to-emerald-700 p-[2px] rounded-[2rem] shadow-lg hover:shadow-green-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-green-600 group-hover:text-white transition-all"><i class="fas fa-tasks"></i></div><div><p class="text-[10px] font-black uppercase text-green-600 tracking-widest">Hasil</p><p class="font-bold text-primary">Belajar</p></div></div><i class="fas fa-external-link-alt text-green-400 text-xs group-hover:translate-x-2 transition-transform"></i></div></div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-0">
+                    <div onclick="openModal('LINK_MEDIA_2', 'Media Belajar S2')" class="group cursor-pointer relative bg-gradient-to-br from-orange-400 to-highlight p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-highlight/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between"><div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 text-orange-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-orange-600 group-hover:text-white transition-all"><i class="fas fa-desktop"></i></div><div><p class="text-[8px] sm:text-[10px] font-black uppercase text-orange-600 tracking-widest">Media</p><p class="font-bold text-primary text-sm sm:text-base">Interaktif</p></div></div><i class="fas fa-arrow-right text-orange-400 text-sm group-hover:translate-x-2 transition-transform"></i></div></div>
+                    <div onclick="openModal('https://www.youtube.com/embed/VID_2', 'Video Praktik S2')" class="group cursor-pointer relative bg-gradient-to-br from-red-500 to-red-700 p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-red-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between"><div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 text-red-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-red-600 group-hover:text-white transition-all"><i class="fas fa-play"></i></div><div><p class="text-[8px] sm:text-[10px] font-black uppercase text-red-600 tracking-widest">Video</p><p class="font-bold text-primary text-sm sm:text-base">Praktik</p></div></div><i class="fas fa-play text-red-400 text-xs sm:text-sm group-hover:translate-x-2 transition-transform"></i></div></div>
+                    <div onclick="openModal('LINK_SISWA_2', 'Hasil Belajar S2')" class="group cursor-pointer relative bg-gradient-to-br from-green-500 to-emerald-700 p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-green-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between"><div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 text-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-green-600 group-hover:text-white transition-all"><i class="fas fa-tasks"></i></div><div><p class="text-[8px] sm:text-[10px] font-black uppercase text-green-600 tracking-widest">Hasil</p><p class="font-bold text-primary text-sm sm:text-base">Belajar</p></div></div><i class="fas fa-external-link-alt text-green-400 text-xs sm:text-sm group-hover:translate-x-2 transition-transform"></i></div></div>
                 </div>
             </section>
 
-            <section class="space-y-10 pb-20 relative">
-                <div class="flex items-center gap-4">
-                    <span class="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center text-xl font-bold shadow-xl">03</span>
+            <section class="space-y-8 sm:space-y-10 pb-10 sm:pb-20 relative">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                    <span class="w-12 h-12 sm:w-14 sm:h-14 bg-primary text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl font-bold shadow-xl shrink-0">03</span>
                     <div>
-                        <h2 class="text-3xl font-bold text-primary">Siklus 3: [Materi Utama]</h2>
-                        <p class="text-accent font-medium text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Praktik di: [Nama Sekolah Mitra]</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-primary">Siklus 3: [Materi Utama]</h2>
+                        <p class="text-accent font-medium text-xs sm:text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Praktik di: [Nama Sekolah Mitra]</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">
                     <div class="relative group cursor-pointer" onclick="openModal('https://docs.google.com/document/d/ID_MODUL_3/preview', 'Modul Ajar Siklus 3')">
-                        <div class="relative bg-gray-900 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-video">
+                        <div class="relative bg-gray-900 rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-video md:aspect-[4/3] lg:aspect-video">
                             <iframe src="https://docs.google.com/document/d/ID_MODUL_3/preview" class="w-full h-full opacity-60 pointer-events-none" frameborder="0"></iframe>
                             <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all">
-                                <div class="w-16 h-16 bg-white text-accent rounded-full flex items-center justify-center mb-3 animate-pulse-slow shadow-xl"><i class="fas fa-file-invoice text-2xl"></i></div>
-                                <span class="bg-accent text-white px-6 py-2 rounded-full text-sm font-bold">Pratinjau Modul Ajar</span>
+                                <div class="w-12 h-12 sm:w-16 sm:h-16 bg-white text-accent rounded-full flex items-center justify-center mb-2 sm:mb-3 animate-pulse-slow shadow-xl"><i class="fas fa-file-invoice text-xl sm:text-2xl"></i></div>
+                                <span class="bg-accent text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold">Pratinjau Modul</span>
                             </div>
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <details class="group bg-white p-6 rounded-3xl border border-gray-100 shadow-sm transition-all" open><summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none"><span class="flex items-center gap-3"><i class="fas fa-info-circle text-accent"></i> 1. Konteks & Tujuan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-sm text-gray-600">[Isi Analisis Karakteristik Siswa]</p></details>
+                        <details class="group bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm transition-all" open><summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none text-sm sm:text-base"><span class="flex items-center gap-3"><i class="fas fa-info-circle text-accent"></i> 1. Konteks & Tujuan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-xs sm:text-sm text-gray-600 text-left md:text-justify">[Isi Analisis Karakteristik Siswa]</p></details>
                         
-                        <details class="group bg-white p-6 rounded-3xl border border-gray-100 shadow-sm transition-all">
-                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none"><span class="flex items-center gap-3"><i class="fas fa-chart-line text-highlight"></i> 2. Kelebihan & Kekurangan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary>
-                            <div class="mt-4 space-y-4">
+                        <details class="group bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-gray-100 shadow-sm transition-all">
+                            <summary class="flex justify-between items-center font-bold text-primary cursor-pointer list-none text-sm sm:text-base"><span class="flex items-center gap-3"><i class="fas fa-chart-line text-highlight"></i> 2. Kelebihan & Kekurangan</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary>
+                            <div class="mt-4 space-y-3 sm:space-y-4">
                                 <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded-r-xl">
-                                    <h4 class="text-xs font-bold text-green-700 uppercase">Kelebihan:</h4>
-                                    <p class="text-sm text-gray-600">[Analisis komponen yang sudah efektif di siklus ini.]</p>
+                                    <h4 class="text-[10px] sm:text-xs font-bold text-green-700 uppercase">Kelebihan:</h4>
+                                    <p class="text-xs sm:text-sm text-gray-600 mt-1 text-left md:text-justify">[Analisis komponen yang sudah efektif di siklus ini.]</p>
                                 </div>
                                 <div class="p-3 bg-red-50 border-l-4 border-red-500 rounded-r-xl">
-                                    <h4 class="text-xs font-bold text-red-700 uppercase">Analisis Kekurangan:</h4>
-                                    <p class="text-sm text-gray-600">[Tuliskan kendala/kekurangan yang tidak berjalan sesuai rencana.]</p>
+                                    <h4 class="text-[10px] sm:text-xs font-bold text-red-700 uppercase">Analisis Kekurangan:</h4>
+                                    <p class="text-xs sm:text-sm text-gray-600 mt-1 text-left md:text-justify">[Tuliskan kendala/kekurangan yang tidak berjalan sesuai rencana.]</p>
                                 </div>
                             </div>
                         </details>
                         
-                        <details class="group bg-blue-50 p-6 rounded-3xl border border-blue-100 shadow-sm transition-all"><summary class="flex justify-between items-center font-bold text-accent cursor-pointer list-none"><span class="flex items-center gap-3"><i class="fas fa-graduation-cap"></i> 3. Kajian Teori Pedagogi</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-sm text-blue-900 leading-relaxed italic">[Isi Teori Pembelajaran]</p></details>
+                        <details class="group bg-blue-50 p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-blue-100 shadow-sm transition-all"><summary class="flex justify-between items-center font-bold text-accent cursor-pointer list-none text-sm sm:text-base"><span class="flex items-center gap-3"><i class="fas fa-graduation-cap"></i> 3. Kajian Teori Pedagogi</span><i class="fas fa-chevron-down text-xs transition-transform group-open:rotate-180"></i></summary><p class="mt-4 text-xs sm:text-sm text-blue-900 leading-relaxed italic text-left md:text-justify">[Isi Teori Pembelajaran]</p></details>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    <div onclick="openModal('LINK_MEDIA_3', 'Media Belajar S3')" class="group cursor-pointer relative bg-gradient-to-br from-orange-400 to-highlight p-[2px] rounded-[2rem] shadow-lg hover:shadow-highlight/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-orange-600 group-hover:text-white transition-all"><i class="fas fa-desktop"></i></div><div><p class="text-[10px] font-black uppercase text-orange-600 tracking-widest">Media</p><p class="font-bold text-primary">Interaktif</p></div></div><i class="fas fa-arrow-right text-orange-400 group-hover:translate-x-2 transition-transform"></i></div></div>
-                    <div onclick="openModal('https://www.youtube.com/embed/VID_3', 'Video Praktik S3')" class="group cursor-pointer relative bg-gradient-to-br from-red-500 to-red-700 p-[2px] rounded-[2rem] shadow-lg hover:shadow-red-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-red-600 group-hover:text-white transition-all"><i class="fas fa-play"></i></div><div><p class="text-[10px] font-black uppercase text-red-600 tracking-widest">Video</p><p class="font-bold text-primary">Praktik</p></div></div><i class="fas fa-play text-red-400 text-xs group-hover:translate-x-2 transition-transform"></i></div></div>
-                    <div onclick="openModal('LINK_SISWA_3', 'Hasil Belajar S3')" class="group cursor-pointer relative bg-gradient-to-br from-green-500 to-emerald-700 p-[2px] rounded-[2rem] shadow-lg hover:shadow-green-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.9rem] px-6 py-6 flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-xl group-hover:bg-green-600 group-hover:text-white transition-all"><i class="fas fa-tasks"></i></div><div><p class="text-[10px] font-black uppercase text-green-600 tracking-widest">Hasil</p><p class="font-bold text-primary">Belajar</p></div></div><i class="fas fa-external-link-alt text-green-400 text-xs group-hover:translate-x-2 transition-transform"></i></div></div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-0">
+                    <div onclick="openModal('LINK_MEDIA_3', 'Media Belajar S3')" class="group cursor-pointer relative bg-gradient-to-br from-orange-400 to-highlight p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-highlight/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between"><div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 text-orange-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-orange-600 group-hover:text-white transition-all"><i class="fas fa-desktop"></i></div><div><p class="text-[8px] sm:text-[10px] font-black uppercase text-orange-600 tracking-widest">Media</p><p class="font-bold text-primary text-sm sm:text-base">Interaktif</p></div></div><i class="fas fa-arrow-right text-orange-400 text-sm group-hover:translate-x-2 transition-transform"></i></div></div>
+                    <div onclick="openModal('https://www.youtube.com/embed/VID_3', 'Video Praktik S3')" class="group cursor-pointer relative bg-gradient-to-br from-red-500 to-red-700 p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-red-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between"><div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 bg-red-100 text-red-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-red-600 group-hover:text-white transition-all"><i class="fas fa-play"></i></div><div><p class="text-[8px] sm:text-[10px] font-black uppercase text-red-600 tracking-widest">Video</p><p class="font-bold text-primary text-sm sm:text-base">Praktik</p></div></div><i class="fas fa-play text-red-400 text-xs sm:text-sm group-hover:translate-x-2 transition-transform"></i></div></div>
+                    <div onclick="openModal('LINK_SISWA_3', 'Hasil Belajar S3')" class="group cursor-pointer relative bg-gradient-to-br from-green-500 to-emerald-700 p-[2px] rounded-[1.5rem] sm:rounded-[2rem] shadow-lg hover:shadow-green-500/20 transition-all hover:-translate-y-2"><div class="bg-white rounded-[1.4rem] sm:rounded-[1.9rem] px-5 sm:px-6 py-5 sm:py-6 flex items-center justify-between"><div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 text-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-xl group-hover:bg-green-600 group-hover:text-white transition-all"><i class="fas fa-tasks"></i></div><div><p class="text-[8px] sm:text-[10px] font-black uppercase text-green-600 tracking-widest">Hasil</p><p class="font-bold text-primary text-sm sm:text-base">Belajar</p></div></div><i class="fas fa-external-link-alt text-green-400 text-xs sm:text-sm group-hover:translate-x-2 transition-transform"></i></div></div>
                 </div>
             </section>
         </div>
     </main>
 
-    <div id="previewModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 md:p-10">
+    <div id="previewModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-3 sm:p-4 md:p-10">
         <div class="absolute inset-0 bg-primary/95 backdrop-blur-md" onclick="closeModal()"></div>
-        <div class="relative w-full max-w-6xl h-[90vh] bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col scale-95 opacity-0 transition-all duration-300" id="modalContent">
-            <div class="flex items-center justify-between px-8 py-4 border-b">
-                <h3 id="modalTitle" class="font-bold text-primary tracking-tight">Pratinjau Artefak</h3>
-                <button onclick="closeModal()" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-red-100 hover:text-red-600 transition-all"><i class="fas fa-times"></i></button>
+        <div class="relative w-full max-w-6xl h-[95vh] sm:h-[90vh] bg-white rounded-2xl sm:rounded-[2rem] shadow-2xl overflow-hidden flex flex-col scale-95 opacity-0 transition-all duration-300" id="modalContent">
+            <div class="flex items-center justify-between px-4 sm:px-8 py-3 sm:py-4 border-b">
+                <h3 id="modalTitle" class="font-bold text-primary tracking-tight text-sm sm:text-base">Pratinjau Artefak</h3>
+                <button onclick="closeModal()" class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-red-100 hover:text-red-600 transition-all"><i class="fas fa-times"></i></button>
             </div>
             <div class="flex-grow bg-gray-50"><iframe id="modalFrame" src="" class="w-full h-full" frameborder="0"></iframe></div>
         </div>
@@ -324,8 +324,8 @@
         });
     </script>
 
-    <footer class="py-12 border-t border-gray-200 text-center relative z-10 bg-white">
-        <p class="text-gray-400 text-sm">© 2026 Fatasya Aulia Suyono. E-Portfolio.</p>
+    <footer class="py-8 sm:py-12 border-t border-gray-200 text-center relative z-10 bg-white">
+        <p class="text-gray-400 text-xs sm:text-sm">© 2026 Fatasya Aulia Suyono. E-Portfolio.</p>
     </footer>
 
 </body>
