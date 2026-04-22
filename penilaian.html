@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Penilaian | Fatasya Aulia Suyono</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +27,13 @@
         }
     </script>
 </head>
-<body class="bg-lightbg text-primary font-sans antialiased overflow-x-hidden relative">
+<body class="bg-lightbg text-primary font-sans antialiased overflow-x-hidden w-full relative">
 
     <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#94A3B8 1px, transparent 1px); background-size: 30px 30px;"></div>
 
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-primary z-50">
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 py-4 flex justify-between items-center">
+            <div class="text-xl sm:text-2xl font-bold tracking-tighter text-primary z-50">
                 Fatasya<span class="text-accent">.</span>
             </div>
             
@@ -52,7 +52,7 @@
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden absolute top-[72px] left-0 w-full bg-white border-b border-gray-200 shadow-xl flex flex-col px-6 py-6 space-y-4 font-medium text-gray-600 z-40">
+        <div id="mobile-menu" class="hidden md:hidden absolute top-[68px] sm:top-[72px] left-0 w-full bg-white border-b border-gray-200 shadow-xl flex flex-col px-6 py-6 space-y-4 font-medium text-gray-600 z-40">
             <a href="index.html" class="block w-full hover:text-accent transition-colors">Beranda</a>
             <a href="profil.html" class="block w-full hover:text-accent transition-colors">Profil Guru</a>
             <a href="artefak.html" class="block w-full hover:text-accent transition-colors">Analisis & Refleksi</a>
@@ -65,152 +65,152 @@
         </div>
     </nav>
 
-    <header class="pt-32 pb-12 px-6 relative z-10 text-center">
+    <header class="pt-28 sm:pt-32 pb-10 sm:pb-12 px-5 sm:px-6 relative z-10 text-center">
         <div class="max-w-4xl mx-auto">
-            <span class="px-4 py-1.5 bg-blue-50 text-accent rounded-full text-xs font-bold uppercase tracking-widest border border-blue-100 italic">Dokumentasi Evaluasi PPL 1</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-4 text-primary">Hasil Penilaian & Evaluasi</h1>
-            <p class="text-gray-500 text-lg mx-auto">Instrumen Penilaian Guru Pamong (GP) & Dosen Pembimbing Lapangan (DPL)</p>
-            <div class="w-24 h-1 bg-highlight mx-auto mt-6 rounded-full"></div>
+            <span class="px-3 sm:px-4 py-1.5 bg-blue-50 text-accent rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest border border-blue-100 italic inline-block mb-3">Dokumentasi Evaluasi PPL 1</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-2 sm:mt-4 mb-3 sm:mb-4 text-primary leading-tight">Hasil Penilaian & Evaluasi</h1>
+            <p class="text-gray-500 text-sm sm:text-base md:text-lg mx-auto px-2">Instrumen Penilaian Guru Pamong (GP) & Dosen Pembimbing Lapangan (DPL)</p>
+            <div class="w-16 sm:w-24 h-1 bg-highlight mx-auto mt-4 sm:mt-6 rounded-full"></div>
         </div>
     </header>
 
-    <main class="pb-24 px-6 relative z-10">
+    <main class="pb-20 sm:pb-24 px-5 sm:px-6 relative z-10">
         <div class="max-w-7xl mx-auto">
             
-            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8">
-                <div class="flex items-center gap-6">
-                    <div class="w-16 h-16 bg-blue-50 text-accent rounded-2xl flex items-center justify-center text-3xl shadow-inner shrink-0">
+            <div class="bg-white p-6 sm:p-8 rounded-[2rem] sm:rounded-[2.5rem] shadow-sm border border-gray-100 mb-12 sm:mb-16 flex flex-col lg:flex-row lg:items-center justify-between gap-6 sm:gap-8">
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-50 text-accent rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl shadow-inner shrink-0">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
                     <div>
-                        <h2 class="text-2xl font-bold text-primary">Status Validasi Dokumen</h2>
-                        <p class="text-gray-500 text-sm">Rekapitulasi penilaian untuk 3 siklus pembelajaran.</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-primary">Status Validasi Dokumen</h2>
+                        <p class="text-gray-500 text-xs sm:text-sm mt-1">Rekapitulasi penilaian untuk 3 siklus pembelajaran.</p>
                     </div>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full lg:w-auto">
-                    <div class="px-5 py-3 bg-slate-50 rounded-2xl border border-gray-200">
-                        <p class="text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 1</p>
-                        <div class="space-y-1">
-                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
-                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 w-full lg:w-auto">
+                    <div class="px-4 sm:px-5 py-3 bg-slate-50 rounded-xl sm:rounded-2xl border border-gray-200">
+                        <p class="text-[10px] sm:text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 1</p>
+                        <div class="space-y-1.5 sm:space-y-1">
+                            <p class="text-[9px] sm:text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
+                            <p class="text-[9px] sm:text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
                         </div>
                     </div>
-                    <div class="px-5 py-3 bg-slate-50 rounded-2xl border border-gray-200">
-                        <p class="text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 2</p>
-                        <div class="space-y-1">
-                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
-                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
+                    <div class="px-4 sm:px-5 py-3 bg-slate-50 rounded-xl sm:rounded-2xl border border-gray-200">
+                        <p class="text-[10px] sm:text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 2</p>
+                        <div class="space-y-1.5 sm:space-y-1">
+                            <p class="text-[9px] sm:text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
+                            <p class="text-[9px] sm:text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
                         </div>
                     </div>
-                    <div class="px-5 py-3 bg-slate-50 rounded-2xl border border-gray-200">
-                        <p class="text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 3</p>
-                        <div class="space-y-1">
-                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
-                            <p class="text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
+                    <div class="px-4 sm:px-5 py-3 bg-slate-50 rounded-xl sm:rounded-2xl border border-gray-200">
+                        <p class="text-[10px] sm:text-xs font-bold text-primary mb-2 uppercase tracking-wider border-b pb-1">Siklus 3</p>
+                        <div class="space-y-1.5 sm:space-y-1">
+                            <p class="text-[9px] sm:text-[10px] flex justify-between gap-4"><span class="text-gray-500">Guru Pamong:</span> <span class="font-bold text-green-600">Tervalidasi <i class="fas fa-check-circle"></i></span></p>
+                            <p class="text-[9px] sm:text-[10px] flex justify-between gap-4"><span class="text-gray-500">DPL:</span> <span class="font-bold text-highlight">Proses <i class="fas fa-clock"></i></span></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="space-y-24">
+            <div class="space-y-16 sm:space-y-24">
 
-                <div class="space-y-8">
-                    <div class="flex items-center gap-4 border-b border-gray-200 pb-4">
-                        <span class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg">01</span>
-                        <h2 class="text-2xl font-bold text-primary">Penilaian Siklus 1</h2>
+                <div class="space-y-6 sm:space-y-8">
+                    <div class="flex items-center gap-3 sm:gap-4 border-b border-gray-200 pb-3 sm:pb-4">
+                        <span class="w-10 h-10 sm:w-12 sm:h-12 bg-primary text-white rounded-lg sm:rounded-xl flex items-center justify-center text-base sm:text-lg font-bold shadow-lg shrink-0">01</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-primary">Penilaian Siklus 1</h2>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+                        <div class="space-y-3 sm:space-y-4">
                             <div class="flex flex-col gap-1">
-                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
-                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
+                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[9px] sm:text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
+                                <h3 class="text-xs sm:text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
                             </div>
                             
-                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                            <div class="bg-gray-900 rounded-[1.5rem] sm:rounded-3xl overflow-hidden shadow-xl border-2 sm:border-4 border-white aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4] relative group">
                                 <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_7_SIKLUS_1/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                                <a href="LINK_DOWNLOAD_7_S1" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
+                                <a href="LINK_DOWNLOAD_7_S1" target="_blank" class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-white text-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-bold text-[10px] sm:text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
                             </div>
                         </div>
 
-                        <div class="space-y-4">
+                        <div class="space-y-3 sm:space-y-4">
                             <div class="flex flex-col gap-1">
-                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
-                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[9px] sm:text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
+                                <h3 class="text-xs sm:text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
                             </div>
                             
-                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                            <div class="bg-gray-900 rounded-[1.5rem] sm:rounded-3xl overflow-hidden shadow-xl border-2 sm:border-4 border-white aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4] relative group">
                                 <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_8_SIKLUS_1/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                                <a href="LINK_DOWNLOAD_8_S1" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
+                                <a href="LINK_DOWNLOAD_8_S1" target="_blank" class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-white text-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-bold text-[10px] sm:text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-8">
-                    <div class="flex items-center gap-4 border-b border-gray-200 pb-4">
-                        <span class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg">02</span>
-                        <h2 class="text-2xl font-bold text-primary">Penilaian Siklus 2</h2>
+                <div class="space-y-6 sm:space-y-8">
+                    <div class="flex items-center gap-3 sm:gap-4 border-b border-gray-200 pb-3 sm:pb-4">
+                        <span class="w-10 h-10 sm:w-12 sm:h-12 bg-primary text-white rounded-lg sm:rounded-xl flex items-center justify-center text-base sm:text-lg font-bold shadow-lg shrink-0">02</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-primary">Penilaian Siklus 2</h2>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+                        <div class="space-y-3 sm:space-y-4">
                             <div class="flex flex-col gap-1">
-                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
-                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
+                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[9px] sm:text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
+                                <h3 class="text-xs sm:text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
                             </div>
-                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                            <div class="bg-gray-900 rounded-[1.5rem] sm:rounded-3xl overflow-hidden shadow-xl border-2 sm:border-4 border-white aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4] relative group">
                                 <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_7_SIKLUS_2/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                                <a href="LINK_DOWNLOAD_7_S2" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
+                                <a href="LINK_DOWNLOAD_7_S2" target="_blank" class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-white text-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-bold text-[10px] sm:text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
                             </div>
                         </div>
 
-                        <div class="space-y-4">
+                        <div class="space-y-3 sm:space-y-4">
                             <div class="flex flex-col gap-1">
-                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
-                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[9px] sm:text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
+                                <h3 class="text-xs sm:text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
                             </div>
-                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                            <div class="bg-gray-900 rounded-[1.5rem] sm:rounded-3xl overflow-hidden shadow-xl border-2 sm:border-4 border-white aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4] relative group">
                                 <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_8_SIKLUS_2/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                                <a href="LINK_DOWNLOAD_8_S2" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
+                                <a href="LINK_DOWNLOAD_8_S2" target="_blank" class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-white text-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-bold text-[10px] sm:text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="space-y-8">
-                    <div class="flex items-center gap-4 border-b border-gray-200 pb-4">
-                        <span class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-lg font-bold shadow-lg">03</span>
-                        <h2 class="text-2xl font-bold text-primary">Penilaian Siklus 3</h2>
+                <div class="space-y-6 sm:space-y-8">
+                    <div class="flex items-center gap-3 sm:gap-4 border-b border-gray-200 pb-3 sm:pb-4">
+                        <span class="w-10 h-10 sm:w-12 sm:h-12 bg-primary text-white rounded-lg sm:rounded-xl flex items-center justify-center text-base sm:text-lg font-bold shadow-lg shrink-0">03</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-primary">Penilaian Siklus 3</h2>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+                        <div class="space-y-3 sm:space-y-4">
                             <div class="flex flex-col gap-1">
-                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
-                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
+                                <span class="px-3 py-1 bg-highlight/10 text-highlight rounded-lg text-[9px] sm:text-[10px] font-bold uppercase tracking-widest border border-highlight/20 w-max">Lampiran 7</span>
+                                <h3 class="text-xs sm:text-sm font-bold text-primary leading-tight">Instrumen Penilaian Penyusunan Perangkat Pembelajaran</h3>
                             </div>
-                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                            <div class="bg-gray-900 rounded-[1.5rem] sm:rounded-3xl overflow-hidden shadow-xl border-2 sm:border-4 border-white aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4] relative group">
                                 <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_7_SIKLUS_3/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                                <a href="LINK_DOWNLOAD_7_S3" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
+                                <a href="LINK_DOWNLOAD_7_S3" target="_blank" class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-white text-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-bold text-[10px] sm:text-xs shadow-lg hover:bg-highlight hover:text-white transition-all">Buka File Asli</a>
                             </div>
                         </div>
 
-                        <div class="space-y-4">
+                        <div class="space-y-3 sm:space-y-4">
                             <div class="flex flex-col gap-1">
-                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
-                                <h3 class="text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
+                                <span class="px-3 py-1 bg-accent/10 text-accent rounded-lg text-[9px] sm:text-[10px] font-bold uppercase tracking-widest border border-accent/20 w-max">Lampiran 8</span>
+                                <h3 class="text-xs sm:text-sm font-bold text-primary leading-tight">Instrumen Penilaian Praktik Mengajar</h3>
                             </div>
-                            <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] relative group">
+                            <div class="bg-gray-900 rounded-[1.5rem] sm:rounded-3xl overflow-hidden shadow-xl border-2 sm:border-4 border-white aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4] relative group">
                                 <iframe src="https://docs.google.com/document/d/ID_LAMPIRAN_8_SIKLUS_3/preview" class="w-full h-full opacity-90 group-hover:opacity-100 transition-opacity" frameborder="0"></iframe>
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                                <a href="LINK_DOWNLOAD_8_S3" target="_blank" class="absolute bottom-6 right-6 bg-white text-primary px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
+                                <a href="LINK_DOWNLOAD_8_S3" target="_blank" class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-white text-primary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-bold text-[10px] sm:text-xs shadow-lg hover:bg-accent hover:text-white transition-all">Buka File Asli</a>
                             </div>
                         </div>
                     </div>
@@ -237,8 +237,8 @@
         });
     </script>
 
-    <footer class="py-12 border-t border-gray-200 text-center relative z-10 bg-white">
-        <p class="text-gray-400 text-sm">© 2026 Fatasya Aulia Suyono. E-Portfolio.</p>
+    <footer class="py-8 sm:py-12 border-t border-gray-200 text-center relative z-10 bg-white">
+        <p class="text-gray-400 text-xs sm:text-sm">© 2026 Fatasya Aulia Suyono. E-Portfolio.</p>
     </footer>
 
 </body>
